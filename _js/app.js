@@ -27,11 +27,10 @@ $(document).ready(function() {
   // Initialize AOS
   AOS.init({
     disable: 'mobile',
-    offset: 200,
-    duration: 600,
-    easing: 'ease-in-sine',
-    delay: 100,
-    once: true
+    offset: 0,
+    duration: 800,
+    delay: 0,
+    once: false
   });
 
   randomizeOrder();

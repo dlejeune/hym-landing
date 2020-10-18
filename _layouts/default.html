@@ -30,10 +30,12 @@
       <hr />
     </div>
   </div>
+  
   {% include landing-page.html %}
+  <section class="parallax-1"></section>
   <div class="layout">
     {%if site.show_aboutme_card %}
-      <section class="card neumorphism-card-big">
+      <section data-aos="fade-down-right" data-aos-anchor-placement="bottom-bottom"  data-aos-duration="500" class="card neumorphism-card-big">
         {% include section-aboutme.html %}
       </section>
     {% endif %}
@@ -52,8 +54,12 @@
         {% include section-projects.html %}
       </section>
     {% endif %}
-    {%if site.show_contact_card %}
-    <section class="card neumorphism-card-big">
+    
+  </div>
+  <section class="parallax-2"></section>
+  <div class="layout">
+  {%if site.show_contact_card %}
+    <section data-aos="fade-down-left" data-aos-anchor-placement="bottom-bottom" class="card neumorphism-card-big">
       {% include section-contact.html %}
     </section>
     {% endif %}
